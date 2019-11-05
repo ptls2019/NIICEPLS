@@ -4,7 +4,7 @@ session_start();
 $uservername="localhost";
 $username="root";
 $password="";
-$dbname="PTSSLiveScoreboard";
+$dbname="ptssls";
 /*
 $uservername="fdb23.awardspace.net";
 $username="3201544_ptsslivescoreboard";

@@ -85,12 +85,6 @@ include("conn.php");
           <br /> <br />
           <td><button type="tr" onclick="window.location='vsfoot3.php'">Football Pusingan Ketiga</button></td>
           <br /> <br />
-          <td><button type="tr" onclick="window.location='vsnet.php'">Netball Pusingan Pertama</button></td>
-          <br><br /> <br />
-          <td><button type="tr" onclick="window.location='vsnet2.php'">Netball Pusingan Kedua</button></td>
-          <br /> <br />
-          <td><button type="tr" onclick="window.location='vsnet3.php'">Netball Pusingan Ketiga</button></td>
-          <br /> <br />
 
 
 </center>

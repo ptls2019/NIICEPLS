@@ -39,7 +39,7 @@ include("conn.php");
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="choosevs.php" class="nav-link">Choose Game</a></li>
+	          <li class="nav-item active"><a href="choosevs.php" class="nav-link">Choose Match</a></li>
 	          <li class="nav-item active"><a href="gamesref.php" class="nav-link">Live Scoreboard</a></li>
 	          <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
 

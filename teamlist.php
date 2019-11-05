@@ -41,7 +41,6 @@ include("conn.php");
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="regteam.php" class="nav-link">Register Team</a></li>
             <li class="nav-item active"><a href="dashboard.php" class="nav-link">Dashboard Football</a></li>
-            <li class="nav-item active"><a href="dashboardnet.php" class="nav-link">Dashboard Netball</a></li>
 	          <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
 
 	        </ul>
@@ -109,41 +108,7 @@ include("conn.php");
             }
             ?>
          
-        </table>
-
-        <br /><br /><br /><br />
-        <h2>Team List Netball</h2>
-        
-        <table>
-          <tr>
-            <th>No</th>
-            <th>Team 1</th>
-            <th>Team 2</th>
-            <th>Kumpulan</th>
-            <th>Time Game</th>
-            <th>Delete</th>
-            <th>Edit</th>
-          </tr>
-            <?php
-            $bill = 1;
-            $sql = "SELECT * FROM team WHERE sport='netball' ORDER BY kumpulan";
-            $result = $conn->query($sql);
-            echo $conn->error;
-            while($row = $result->fetch_object()) {
-                ?>
-                <tr>
-                    <td><?php echo $bill++; ?></td>
-                    <td><?php echo $row->team_1; ?></td>
-                    <td><?php echo $row->team_2; ?></td>
-                    <td><?php echo $row->kumpulan; ?></td>
-                    <td><?php echo $row->time_game; ?></td>
-                    <td><button type="button" onclick="padam(<?php echo $row->game_id; ?>)">Delete</button></td>
-                    <td><button type="button" onclick="window.location='editteam.php?game_id=<?php echo $row->game_id; ?>'">Edit</button></td>
-                </tr>
-                <?php
-            }
-            ?>
-         
+       
         </table>
         
         <script>

@@ -43,8 +43,8 @@ $row = $conn->query($sql)->fetch_object();
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="teamlist.php" class="nav-link">Edit Team</a></li>
-            <li class="nav-item active"><a href="dashboard.php" class="nav-link">Dashboard Football</a></li>
-	          <li class="nav-item active"><a href="dashboardnet.php" class="nav-link">Dashboard Netball</a></li>
+            <li class="nav-item active"><a href="regteam.php" class="nav-link">Register Team</a></li>
+	          <li class="nav-item active"><a href="dashboard.php" class="nav-link">Dashboard Football</a></li>
 	          <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
 	        </ul>
 	      </div>

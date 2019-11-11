@@ -45,7 +45,6 @@ $row = $conn->query($sql)->fetch_object();
           <li class="nav-item active"><a href="indexreg.php" class="nav-link">Register</a></li>
             <li class="nav-item active"><a href="regref.php" class="nav-link">Register Referee</a></li>
             <li class="nav-item active"><a href="dashboard.php" class="nav-link">Dashboard Football</a></li>
-	          <li class="nav-item active"><a href="dashboardnet.php" class="nav-link">Dashboard Netball</a></li>
 	          <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
 
 	        </ul>

@@ -54,8 +54,8 @@ include("conn.php");
 				<div class="row">
 					<div class="col-lg-6">
 	          <div class="heading-section ftco-animate">
-	          	<span class="subheading">Laporan Sukan</span>
-	            <h2 class="mb-4">Skor Sukan Semasa</h2>
+	          	<span class="subheading">Sports Report</span>
+	            <h2 class="mb-4">Live Sport Scores</h2>
             </div>
             
             <?php
@@ -66,7 +66,7 @@ include("conn.php");
             $rowt = $conn->query($sql)->fetch_object();
             ?>
 	          <div class="scoreboard mb-5 mb-lg-0">
-	          	<div class="divider text-center"><span>Wed, Oct 9, 2019; Sukan Jabatan</span></div>
+	          	<div class="divider text-center"><span>Thursday, Nov 14, 2019; Departmental Sport</span></div>
 	          	<div class="d-sm-flex mb-4">
 		          	<div class="sport-team d-flex align-items-center">
 	          			<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
@@ -106,8 +106,8 @@ include("conn.php");
             <div class="media block-6 services d-flex">
               <div class="icon"><span class="flaticon-american-football"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Sukan</h3>
-                <p>Meningkatkan keyakinan diri</p>
+                <h3 class="heading mb-3">Sport</h3>
+                <p>Increase self-confidence</p>
               </div>
             </div>      
           </div>
@@ -115,8 +115,8 @@ include("conn.php");
             <div class="media block-6 services d-flex">
               <div class="icon"><span class="flaticon-american-football-1"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Kekuatan</h3>
-                <p>Meningkatkan Stamina</p>
+                <h3 class="heading mb-3">Power</h3>
+                <p>Increase your stamina</p>
               </div>
             </div>    
           </div>
@@ -124,8 +124,8 @@ include("conn.php");
             <div class="media block-6 services d-flex">
               <div class="icon"><span class="flaticon-lockers"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Minda</h3>
-                <p>Mengurangkan tekanan/stress</p>
+                <h3 class="heading mb-3">Mind</h3>
+                <p>Reduce stress</p>
               </div>
             </div>      
           </div>
@@ -133,8 +133,8 @@ include("conn.php");
             <div class="media block-6 services d-flex">
               <div class="icon"><span class="flaticon-strategy"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3">Hubungan</h3>
-                <p>Merapatkan silaturrahim sesama masyarakat</p>
+                <h3 class="heading mb-3">Relationship</h3>
+                <p>Bringing people closer together</p>
               </div>
             </div>      
           </div>

@@ -80,7 +80,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JTMK</h4>
-									<span class="date">October 10, 2019</span>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -92,7 +92,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JKE</h4>
-									<span class="date">October 10, 2019</span>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -104,7 +104,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JKM</h4>
-									<span class="date">October 10, 2019</span>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -116,7 +116,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JP</h4>
-									<span class="date">October 10, 2019</span>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -128,7 +128,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JRKV</h4>
-									<span class="date">October 10, 2019</span>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -140,7 +140,7 @@ include("conn.php");
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
 									<h4 class="team-name">JPH</h4>
-									<span class="date">October 10, 2019<span>
+									<span class="date">November 14, 2019<span>
 								</div>
 							</div>
 						</div>

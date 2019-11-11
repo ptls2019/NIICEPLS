@@ -42,7 +42,7 @@ include("conn.php");
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active"><a href="choosevs.php" class="nav-link">Choose Match</a></li>
-          <li class="nav-item active"><a href="gamesref.php" class="nav-link">Live Scoreboard</a></li>
+          <li class="nav-item active"><a href="games.php" class="nav-link">Live Scoreboard</a></li>
           <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
         </ul>
       </div>
@@ -81,7 +81,7 @@ include("conn.php");
           <h2>Team List Football</h2>
           <br /><br />
           
-          <h2>Pusingan Pertama</h2>
+          <h2>First Round</h2>
           <br /><br />
 
           <table>

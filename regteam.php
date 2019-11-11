@@ -67,29 +67,6 @@ include("conn.php");
           </tr>
           <br>
           <TR>
-            <TD>Sport</TD>
-            <td>
-              <select name="sport">
-                <option value=""></option>
-                <?php
-                $sql = "SELECT * FROM team WHERE sport='football'";
-                $result = $conn->query($sql);
-                if ($result->num_rows < 4) {
-                  ?>
-                  <option value="football"> Football </option>
-                <?php
-                }
-
-                $sql = "SELECT * FROM team WHERE sport='netball'";
-                $result = $conn->query($sql);
-                if ($result->num_rows < 4) {
-                  ?>
-                  <option value="netball"> Netball </option>
-                <?php
-                }
-                ?>
-              </select>
-            </td>
             <TD>Kumpulan</TD>
             <TD ALIGN="left"><INPUT TYPE="number" min="1" max="7" NAME="kumpulan">
           </tr>

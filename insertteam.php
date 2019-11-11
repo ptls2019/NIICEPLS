@@ -1,5 +1,5 @@
 <?php
-$game_id = $_POST['game_id']
+$game_id = $_POST['game_id'];
 $sport = $_POST['sport'];
 $team_1 = $_POST['team_1'];
 $team_2 = $_POST['team_2'];

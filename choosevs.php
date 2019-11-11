@@ -79,11 +79,11 @@ include("conn.php");
         <h2>
           <th>Choose Match</th>
           <br /> <br />
-          <td><button type="tr" onclick="window.location='vsfoot.php'">Football Pusingan Pertama</button></td>
+          <td><button type="tr" onclick="window.location='vsfoot.php'">Football First Round</button></td>
           <br /> <br />
-          <td><button type="tr" onclick="window.location='vsfoot2.php'">Football Pusingan Kedua</button></td>
+          <td><button type="tr" onclick="window.location='vsfoot2.php'">Football Semifinal Round</button></td>
           <br /> <br />
-          <td><button type="tr" onclick="window.location='vsfoot3.php'">Football Pusingan Ketiga</button></td>
+          <td><button type="tr" onclick="window.location='vsfoot3.php'">Football Final Round</button></td>
           <br /> <br />
 
 

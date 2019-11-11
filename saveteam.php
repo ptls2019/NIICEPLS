@@ -1,7 +1,7 @@
 <?php
 include("conn.php");
 //$conn=mysqli_connect("localhost", "root", "ptsslivescoreboard")
-$sport = $_POST['sport'];
+$sport = 'football';
 $team_1 = $_POST['team_1'];
 $team_2 = $_POST['team_2'];
 $time_game = $_POST['time_game'];

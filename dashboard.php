@@ -88,7 +88,7 @@ header("refresh:60");
 					$row = $conn->query($sql2)->fetch_object(); 
 					?>
 					<div class="scoreboard mb-5 mb-lg-2">
-						<div class="divider text-center"><span>10:00 a.m Sukan Antara Jabatan</span></div>
+						<div class="divider text-center"><span>10:00 a.m sports between departments</span></div>
 						<div class="d-sm-flex mb-4">
 							<div class="sport-team d-flex align-items-center">
 								<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>

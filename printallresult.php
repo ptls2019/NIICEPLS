@@ -29,26 +29,17 @@ include("conn.php");
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <style>
+@media print {
+    button {
+        display:none;
+    }
+}
+      </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><span>PTSS Live Scoreboard</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="indexreg.php" class="nav-link">Register</a></li>
-          <li class="nav-item active"><a href="index.php" class="nav-link">Logout</a></li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- END nav -->
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <h1 class="mb-3 bread"></h1>
@@ -192,8 +183,9 @@ include("conn.php");
           ?>
         </table>
 
-        <br />
-        <button type="button" onclick="window.location='printallresult.php'">Print</button>
+        <br /><br />
+        <button type="button" onclick="print()">Print</button>
+        <button type="button" onclick="window.location='allresultfoot.php'">Back</button>
 
         <div class="content">
           <!-- loader -->

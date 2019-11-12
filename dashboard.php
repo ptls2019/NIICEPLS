@@ -1,6 +1,6 @@
 <?php
 include("conn.php");
-header("refresh:60");
+header("refresh:300");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +83,7 @@ header("refresh:60");
 				<div class="col-lg-12">
 					
 						<?php
-					$sql = "SELECT game_id FROM team WHERE team_1='JTMK' AND sport='football'";
+					$sql = "SELECT game_id FROM team WHERE team_1='FKAAS' AND sport='football'";
 					$sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
 					$row = $conn->query($sql2)->fetch_object(); 
 					?>
@@ -91,17 +91,15 @@ header("refresh:60");
 						<div class="divider text-center"><span>10:00 a.m sports between departments</span></div>
 						<div class="d-sm-flex mb-4">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
 								<div class="text-center px-1 px-md-3 desc">
 									<h3 class="score win" style="font-size:80pt;"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-									<h4 class="team-name" style="font-size:80pt;">JTMK</h4>
+									<h4 class="team-name" style="font-size:80pt;">FKAAS</h4>
 								</div>
 							</div>
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo order-sm-last" style="background-image: url(images/jrkv.jpg);"></div>
 								<div class="text-center px-1 px-md-3 desc">
 									<h3 class="score lost" style="font-size:80pt;"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-									<h4 class="team-name" style="font-size:80pt;">JRKV</h4>
+									<h4 class="team-name" style="font-size:80pt;">FKEE</h4>
 								</div>
 							</div>
 						</div>

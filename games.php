@@ -76,10 +76,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JTMK</h4>
+									<h4 class="team-name">FKAAS</h4>
 									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
@@ -88,10 +87,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jke.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JKE</h4>
+									<h4 class="team-name">FKEE</h4>
 									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
@@ -100,10 +98,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jkm.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JKM</h4>
+									<h4 class="team-name">FKMP</h4>
 									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
@@ -112,10 +109,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jp.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JP</h4>
+									<h4 class="team-name">FPTP</h4>
 									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
@@ -124,10 +120,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jrkv.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JRKV</h4>
+									<h4 class="team-name">FTVE</h4>
 									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
@@ -136,10 +131,9 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jph.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JPH</h4>
+									<h4 class="team-name">FCSIT</h4>
 									<span class="date">November 14, 2019<span>
 								</div>
 							</div>
@@ -148,11 +142,10 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jpa.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JPA</h4>
-									<span class="date">October 10, 2019</span>
+									<h4 class="team-name">FAST</h4>
+									<span class="date">November 10, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -160,11 +153,10 @@ include("conn.php");
 					<div class="item">
 						<div class="game-schedule">
 							<div class="sport-team d-flex align-items-center">
-								<div class="img logo" style="background-image: url(images/jmsk.jpg);"></div>
 								<div class="pl-4 desc">
 									<span class="venue">Football Field</span>
-									<h4 class="team-name">JMSK</h4>
-									<span class="date">October 10, 2019</span>
+									<h4 class="team-name">FTK</h4>
+									<span class="date">November 14, 2019</span>
 								</div>
 							</div>
 						</div>
@@ -181,108 +173,100 @@ include("conn.php");
 			<div class="row">
 				<div class="col-md-7">
 					<div class="heading-section ftco-animate">
-						<h2 class="mb-4">Live scoreboard Game Football
+						<h2 class="mb-4">Live Scoreboard Game Football
 							<?php
-							$sql = "SELECT game_id FROM team WHERE team_1='JTMK' AND sport='football'";
+							$sql = "SELECT game_id FROM team WHERE team_1='FKAAS' AND sport='football'";
 							$sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
 							$row = $conn->query($sql2)->fetch_object();
-							$sql = "SELECT time_game FROM team WHERE team_1='JTMK' AND sport='football'";
+							$sql = "SELECT time_game FROM team WHERE team_1='FKAAS' AND sport='football'";
 							$rowt = $conn->query($sql)->fetch_object();
 							?>
 							<div class="scoreboard mb-5 mb-lg-3">
-								<div class="divider text-center"><span>Sukan Jabatan<br><?php echo $rowt->time_game; ?></span></div>
+								<div class="divider text-center"><span>DEPARTMENTAL SPORT<br><?php echo $rowt->time_game; ?></span></div>
 								<div class="d-sm-flex mb-4">
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score lost"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-											<h4 class="team-name">JTMK</h4>
+											<h4 class="team-name">FKAAS</h4>
 										</div>
 									</div>
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo order-sm-last" style="background-image: url(images/jrkv.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score win"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-											<h4 class="team-name">JRKV</h4>
+											<h4 class="team-name">FKEE</h4>
 										</div>
 									</div>
 								</div>
 							</div>
 
 							<?php
-							$sql = "SELECT game_id FROM team WHERE team_1='JP' AND sport='football'";
+							$sql = "SELECT game_id FROM team WHERE team_1='FKMP' AND sport='football'";
 							$sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
 							$row = $conn->query($sql2)->fetch_object();
-							$sql = "SELECT time_game FROM team WHERE team_1='JP' AND sport='football'";
+							$sql = "SELECT time_game FROM team WHERE team_1='FKMP' AND sport='football'";
 							$rowt = $conn->query($sql)->fetch_object();
 							?>
 							<div class="scoreboard mb-5 mb-lg-3">
-								<div class="divider text-center"><span>Sukan Jabatan<br><?php echo $rowt->time_game; ?></span></div>
+								<div class="divider text-center"><span>DEPARTMENTAL SPORT<br><?php echo $rowt->time_game; ?></span></div>
 								<div class="d-sm-flex mb-4">
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo" style="background-image: url(images/JP.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score lost"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-											<h4 class="team-name">JP</h4>
+											<h4 class="team-name">FKMP</h4>
 										</div>
 									</div>
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo order-sm-last" style="background-image: url(images/jmsk.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score win"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-											<h4 class="team-name">JMSK</h4>
+											<h4 class="team-name">FPTP</h4>
 										</div>
 									</div>
 								</div>
 							</div>
 							<?php
-							$sql = "SELECT game_id FROM team WHERE team_1='JPA' AND sport='football'";
+							$sql = "SELECT game_id FROM team WHERE team_1='FTVE' AND sport='football'";
 							$sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
 							$row = $conn->query($sql2)->fetch_object();
-							$sql = "SELECT time_game FROM team WHERE team_1='JPA' AND sport='football'";
+							$sql = "SELECT time_game FROM team WHERE team_1='FTVE' AND sport='football'";
 							$rowt = $conn->query($sql)->fetch_object();?>
 							<div class="scoreboard mb-5 mb-lg-3">
-								<div class="divider text-center"><span>Sukan Jabatan<br><?php echo $rowt->time_game; ?></span></div>
+								<div class="divider text-center"><span>DEPARTMENTAL SPORT<br><?php echo $rowt->time_game; ?></span></div>
 								<div class="d-sm-flex mb-4">
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo" style="background-image: url(images/jpa.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score lost"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-											<h4 class="team-name">JPA</h4>
+											<h4 class="team-name">FTVE</h4>
 										</div>
 									</div>
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo order-sm-last" style="background-image: url(images/jkm.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score win"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-											<h4 class="team-name">JKM</h4>
+											<h4 class="team-name">FCSIT</h4>
 										</div>
 									</div>
 								</div>
 							</div>
 
 							<?php
-							$sql = "SELECT game_id FROM team WHERE team_1='JKE' AND sport='football'";
+							$sql = "SELECT game_id FROM team WHERE team_1='FAST' AND sport='football'";
 							$sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
 							$row = $conn->query($sql2)->fetch_object();
-							$sql = "SELECT time_game FROM team WHERE team_1='JKE' AND sport='football'";
+							$sql = "SELECT time_game FROM team WHERE team_1='FAST' AND sport='football'";
             				$rowt = $conn->query($sql)->fetch_object();
 							?>
 							<div class="scoreboard mb-5 mb-lg-3">
-								<div class="divider text-center"><span>Sukan Jabatan<br><?php echo $rowt->time_game; ?></span></div>
+								<div class="divider text-center"><span>DEPARTMENTAL SPORT<br><?php echo $rowt->time_game; ?></span></div>
 								<div class="d-sm-flex mb-4">
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo" style="background-image: url(images/jke.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score lost"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-											<h4 class="team-name">JKE</h4>
+											<h4 class="team-name">FAST</h4>
 										</div>
 									</div>
 									<div class="sport-team d-flex align-items-center">
-										<div class="img logo order-sm-last" style="background-image: url(images/jph.jpg);"></div>
 										<div class="text-center px-1 px-md-3 desc">
 											<h3 class="score win"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-											<h4 class="team-name">JPH<h4>
+											<h4 class="team-name">FTK<h4>
 										</div>
 									</div>
 								</div>

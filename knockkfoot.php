@@ -55,7 +55,7 @@ include("conn.php");
       <br /><br /><br /><br />
       <center>
 
-    <h2>MATCH SCHEDULE FOOTBALL PTSS</h2>
+    <h2>MATCH SCHEDULE FOOTBALL </h2>
 
     <?php
     $sql="SELECT * FROM team WHERE sport='football' ORDER BY kumpulan";

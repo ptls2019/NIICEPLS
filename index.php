@@ -62,27 +62,25 @@ include("conn.php");
           </div>
 
           <?php
-          $sql = "SELECT game_id FROM team WHERE team_1='JTMK' AND sport='football'";
+          $sql = "SELECT game_id FROM team WHERE team_1='FKAAS' AND sport='football'";
           $sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
           $row = $conn->query($sql2)->fetch_object();
-          $sql = "SELECT time_game FROM team WHERE team_1='JTMK' AND sport='football'";
+          $sql = "SELECT time_game FROM team WHERE team_1='FKAAS' AND sport='football'";
           $rowt = $conn->query($sql)->fetch_object();
           ?>
           <div class="scoreboard mb-5 mb-lg-0">
             <div class="divider text-center"><span>Thursday, Nov 14, 2019; Departmental Sport<br><?php echo $rowt->time_game; ?></span></div>
             <div class="d-sm-flex mb-4">
               <div class="sport-team d-flex align-items-center">
-                <div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
                 <div class="text-center px-1 px-md-3 desc">
                   <h3 class="score win"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-                  <h4 class="team-name">JTMK</h4>
+                  <h4 class="team-name">FKAAS</h4>
                 </div>
               </div>
               <div class="sport-team d-flex align-items-center">
-                <div class="img logo order-sm-last" style="background-image: url(images/jrkv.jpg);"></div>
                 <div class="text-center px-1 px-md-3 desc">
                   <h3 class="score lost"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-                  <h4 class="team-name">JRKV</h4>
+                  <h4 class="team-name">FKAAS</h4>
                 </div>
               </div>
             </div>

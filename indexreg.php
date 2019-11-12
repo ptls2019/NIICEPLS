@@ -59,27 +59,25 @@ include("conn.php");
             </div>
             
             <?php
-            $sql = "SELECT game_id FROM team WHERE team_1='JTMK' AND sport='football'";
+            $sql = "SELECT game_id FROM team WHERE team_1='FKAAS' AND sport='football'";
             $sql2 = "SELECT * FROM game_score WHERE game_id IN ($sql)";
             $row = $conn->query($sql2)->fetch_object(); 
-            $sql = "SELECT time_game FROM team WHERE team_1='JTMK' AND sport='football'";
+            $sql = "SELECT time_game FROM team WHERE team_1='FKAAS' AND sport='football'";
             $rowt = $conn->query($sql)->fetch_object();
             ?>
 	          <div class="scoreboard mb-5 mb-lg-0">
 	          	<div class="divider text-center"><span>Thursday, Nov 14, 2019; Departmental Sport</span></div>
 	          	<div class="d-sm-flex mb-4">
 		          	<div class="sport-team d-flex align-items-center">
-	          			<div class="img logo" style="background-image: url(images/jtmk.jpg);"></div>
 									<div class="text-center px-1 px-md-3 desc">
 										<h3 class="score win"><span><?php echo $row->steam_1set1 + $row->steam_1set2; ?></span></h3>
-										<h4 class="team-name">JTMK</h4>
+										<h4 class="team-name">FKAAS</h4>
 									</div>
 		          	</div>
 		          	<div class="sport-team d-flex align-items-center">
-	          			<div class="img logo order-sm-last" style="background-image: url(images/jp.jpg);"></div>
 									<div class="text-center px-1 px-md-3 desc">
 										<h3 class="score lost"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-										<h4 class="team-name">JP</h4>
+										<h4 class="team-name">FKEE</h4>
 									</div>
 		          	</div>
 	          	</div>
@@ -198,72 +196,18 @@ include("conn.php");
         </div>
     	</div>
     </section>
-		
+		<br><br />
 
    
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Blog</span>
-            <h2>Recent News</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-6 col-lg-3 ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="kstp.html" class="block-20" style="background-image: url('images/IMG-20190720-WA0043.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center p-2 pr-3 mb-4 topp">
-              		<div class="one">
-              			<span class="day mr-1">19-21</span>
-              		</div>
-              		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">July</span>
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="innocom.html">Karnival Sukan Tempur Politeknik 2019</a></h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="innocom.html" class="block-20" style="background-image: url('images/IMG-20190919-WA0028.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-              	<div class="d-flex align-items-center p-2 pr-3 mb-4 topp">
-              		<div class="one">
-              			<span class="day mr-1">9&10</span>
-              		</div>
-              		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">Oct</span>
-              		</div>
-              	</div>
-                <h3 class="heading"><a href="#">Innocom 2019</a></h3>
-              </div>
-            </div>
-          </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-		
 		<section class="ftco-subscribe img" style="background-image: url(images/bg_1.jpg);">
       <div class="overlay">
         <div class="container">
           <div class="row d-flex justify-content-center">
             <div class="col-md-10 text-wrap text-center heading-section heading-section-white ftco-animate">
               <h2></h2>
-              <div class="row d-flex justify-content-center mt-4 mb-4">
-                <div class="col-md-10">
-                  <form action="#" class="subscribe-form">
-                    <div class="form-group d-flex">
-                      <input type="text" class="form-control" placeholder="Enter email address">
-                      <input type="submit" value="Subscribe" class="submit px-3">
+            <div class="row d-flex justify-content-center mt-4 mb-4">
+              <div class="col-md-10">
+                <form action="#" class="subscribe-form">
                     </div>
                   </form>
                 </div>

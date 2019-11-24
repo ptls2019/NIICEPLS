@@ -1,6 +1,6 @@
 <?php
 include("conn.php");
-header("refresh:300");
+header("refresh:120");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +61,7 @@ header("refresh:300");
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>PTSS Live Scoreboard</span></a>
+			<a class="navbar-brand" href="index.php"><span>PTSS Live Scoreboard</span></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
 			</button>

@@ -1,5 +1,6 @@
 <?php
 include("conn.php");
+header("refresh:120");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +36,7 @@ include("conn.php");
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><span>PTSS Live Scoreboard</span></a>
+      <a class="navbar-brand" href="index.php"><span>PTSS Live Scoreboard</span></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
@@ -80,7 +81,7 @@ include("conn.php");
               <div class="sport-team d-flex align-items-center">
                 <div class="text-center px-1 px-md-3 desc">
                   <h3 class="score lost"><span><?php echo $row->steam_2set1 + $row->steam_2set2; ?></span></h3>
-                  <h4 class="team-name">FKAAS</h4>
+                  <h4 class="team-name">FKEE</h4>
                 </div>
               </div>
             </div>
